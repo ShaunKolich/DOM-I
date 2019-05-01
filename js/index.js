@@ -45,6 +45,8 @@ navbar.forEach((nav, index) => {
   // nav.textContent = navarr;
   let nav1 = siteContent.nav[`nav-item-${index}`];
   nav.textContent = nav1;
-  nav.style.color = 'blue';
+  // nav.style.color = 'blue';
 
 })
+let sideimg = document.getElementById('cta-img');
+sideimg.setAttribute('src', siteContent["cta"]["img-src"]);
