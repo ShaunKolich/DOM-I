@@ -84,4 +84,7 @@ topContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-conte
 let contactInfo = document.getElementsByClassName('contact')[0];
 contactInfo.getElementsByTagName('h4')[0].textContent = siteContent['contact']['contact-h4'];
 contactInfo.getElementsByTagName('p')[0].textContent = siteContent['contact']['address'];
-contactInfo.
+contactInfo.getElementsByTagName('p')[1].textContent = siteContent['contact']['phone'];
+contactInfo.getElementsByTagName('p')[2].textContent = siteContent['contact']['email'];
+
+//Footer
