@@ -88,3 +88,6 @@ contactInfo.getElementsByTagName('p')[1].textContent = siteContent['contact']['p
 contactInfo.getElementsByTagName('p')[2].textContent = siteContent['contact']['email'];
 
 //Footer
+
+let footerInfo = document.getElementsByTagName('footer')[0];
+footerInfo.getElementsByTagName('p')[0].textContent = siteContent['footer']['copyright'];
