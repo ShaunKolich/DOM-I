@@ -83,6 +83,7 @@ topContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-conte
 
 //Contact
 let contactInfo = document.getElementsByClassName('contact')[0];
+console.log(contactInfo);
 contactInfo.getElementsByTagName('h4')[0].textContent = siteContent['contact']['contact-h4'];
 contactInfo.getElementsByTagName('p')[0].textContent = siteContent['contact']['address'];
 contactInfo.getElementsByTagName('p')[1].textContent = siteContent['contact']['phone'];
@@ -99,9 +100,12 @@ let nav1desc = document.createTextNode('Company');
 // console.log(nav1);
 nav1.appendChild(nav1desc);
 nav1.style.color = 'green';
+nav1.style.textDecoration = 'none';
 document.getElementsByTagName('nav')[0].appendChild(nav1);
+
 let nav2 = document.createElement('a');
 let nav2desc = document.createTextNode('Reviews');
 nav2.appendChild(nav2desc);
 nav2.style.color = 'green';
+nav2.style.textDecoration = 'none';
 document.getElementsByTagName('nav')[0].appendChild(nav2);
