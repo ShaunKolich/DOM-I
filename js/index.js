@@ -40,6 +40,8 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Navigation Menu
 let navbar = document.querySelectorAll('nav a');
 navbar.forEach((nav, index) => {
   // nav.textContent = navarr;
@@ -47,6 +49,7 @@ navbar.forEach((nav, index) => {
   nav.textContent = nav1;
   // nav.style.color = 'blue';
 
+//Header Image Button and Dom is Awesome
 })
 let sideimg = document.getElementById('cta-img');
 sideimg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -59,6 +62,8 @@ ctaText.getElementsByTagName('button')[0].textContent = siteContent['cta']['butt
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]['middle-img-src']);
 
+
+//Features and About
 let topContent = document.querySelectorAll('.text-content');
 
 topContent[0].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
@@ -67,8 +72,11 @@ topContent[0].getElementsByTagName('p')[0].textContent = siteContent['main-conte
 topContent[1].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['about-h4'];
 topContent[1].getElementsByTagName('p')[0].textContent = siteContent['main-content']['about-content'];
 
+//Services and vision
 topContent[2].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['services-h4'];
 topContent[2].getElementsByTagName('p')[0].textContent = siteContent['main-content']['services-content'];
 
 topContent[3].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['vision-h4'];
 topContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-content']['vision-content'];
+
+//Contact
