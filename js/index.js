@@ -48,6 +48,7 @@ navbar.forEach((nav, index) => {
   let nav1 = siteContent.nav[`nav-item-${index}`];
   nav.textContent = nav1;
   nav.style.textDecoration = 'none';
+  nav.style.color = 'green';
 
   //Header Image Button and Dom is Awesome
 })
@@ -91,3 +92,16 @@ contactInfo.getElementsByTagName('p')[2].textContent = siteContent['contact']['e
 
 let footerInfo = document.getElementsByTagName('footer')[0];
 footerInfo.getElementsByTagName('p')[0].textContent = siteContent['footer']['copyright'];
+
+//Appending the Navigation Menu
+let nav1 = document.createElement('a');
+let nav1desc = document.createTextNode('Company');
+// console.log(nav1);
+nav1.appendChild(nav1desc);
+nav1.style.color = 'green';
+document.getElementsByTagName('nav')[0].appendChild(nav1);
+let nav2 = document.createElement('a');
+let nav2desc = document.createTextNode('Reviews');
+nav2.appendChild(nav2desc);
+nav2.style.color = 'green';
+document.getElementsByTagName('nav')[0].appendChild(nav2);
