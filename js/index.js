@@ -47,9 +47,9 @@ navbar.forEach((nav, index) => {
   // nav.textContent = navarr;
   let nav1 = siteContent.nav[`nav-item-${index}`];
   nav.textContent = nav1;
-  // nav.style.color = 'blue';
+  nav.style.textDecoration = 'none';
 
-//Header Image Button and Dom is Awesome
+  //Header Image Button and Dom is Awesome
 })
 let sideimg = document.getElementById('cta-img');
 sideimg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -65,6 +65,7 @@ middleImg.setAttribute('src', siteContent["main-content"]['middle-img-src']);
 
 //Features and About
 let topContent = document.querySelectorAll('.text-content');
+// console.log(topContent);
 
 topContent[0].getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
 topContent[0].getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
@@ -80,3 +81,7 @@ topContent[3].getElementsByTagName('h4')[0].textContent = siteContent['main-cont
 topContent[3].getElementsByTagName('p')[0].textContent = siteContent['main-content']['vision-content'];
 
 //Contact
+let contactInfo = document.getElementsByClassName('contact')[0];
+contactInfo.getElementsByTagName('h4')[0].textContent = siteContent['contact']['contact-h4'];
+contactInfo.getElementsByTagName('p')[0].textContent = siteContent['contact']['address'];
+contactInfo.
